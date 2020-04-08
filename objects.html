@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>objects in java script</title>
+        <script type="text/javascript">
+       // var Student ={
+          //  first_name:"Lakshman",
+          //  last_name:"Goud",
+          //  roll_number:"595",
+            //branch:"CSE",
+            //details : function()
+            //{
+              // document.write("student details");    
+            //}
+        //}
+        //Student.details();
+        //if we want multiple objects follow the below process
+
+        function Students(first_name, last_name, roll_number)
+        {
+            this.first_name = first_name;
+            this.last_name = last_name;
+            this.roll_number = roll_number;
+            this.info = function()
+            {
+                document.write("Students information");
+            }
+        }
+        var s1=new Students("Lakshman","Goud",595);
+        s1.info();
+        delete Students.roll_number; //deleting the property
+        Students.college="AudiSankara";   //adding new property
+        document.writeln("<h2>"+Students.college+"</h2>");
+        </script>
+    </head>
+    <body>
+    </body>
+ </html>
+        

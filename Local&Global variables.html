@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Scope of Variables</title>
+        <script type="text/javascript">
+        var b=4;
+        name="Lakshman"//can access without var keyword
+        //And it would become a global variable but it should not kept under the restrict mode
+
+        function myfunction()
+        {
+            var a=10;
+            document.write("<h1>"+a+"</h1>");
+            document.write("<h1>"+b+"</h1>");
+        }
+        myfunction();
+        document.write("<h1>"+name+"</h1>");
+        
+        </script>
+        </head>
+    <body>
+    </body>
+</html>
